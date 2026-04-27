@@ -1,2 +1,10 @@
 BreezySLAM/
 .vscode/
+*.png
+*.cpg
+*.prj
+*.shp
+*.shx
+output/
+__pycache__/ 
+
