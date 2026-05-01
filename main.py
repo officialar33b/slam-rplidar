@@ -30,7 +30,8 @@ time.sleep(2)
 count = 0
 
 cv2.namedWindow("SLAM map", cv2.WINDOW_NORMAL)
-cv2.resizeWindow("SLAM map", 700, 700)
+cv2.resizeWindow("SLAM map", 1920, 1080)
+cv2.moveWindow("SLAM map", 0, 0)
 
 print(f"Collecting scans: {SCANS} scans, move slowly around the room.")
 print("Press Q in the window to quit or stop early.")
