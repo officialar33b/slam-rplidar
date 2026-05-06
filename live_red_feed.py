@@ -72,13 +72,13 @@ def make_display(canvas, scan, count):
     # Small "nose" indicator: a short line from the center pointing in the
     # current ANGLE_OFFSET direction, so you can see at a glance which way
     # the sensor's front is on screen.
-    nose_len = int(px_per_meter * 0.4)
-    nose_rad = np.radians((ANGLE_OFFSET + 180.) % 360.0)
-    nose_x = int(cx + nose_len * np.cos(nose_rad))
-    nose_y = int(cy - nose_len * np.sin(nose_rad))
-    cv2.arrowedLine(
-        display, (cx, cy), (nose_x, nose_y), (0, 200, 200), 2, cv2.LINE_AA, tipLength=0.3
-    )
+    # nose_len = int(px_per_meter * 0.4)
+    # nose_rad = np.radians((ANGLE_OFFSET + 180.) % 360.0)
+    # nose_x = int(cx + nose_len * np.cos(nose_rad))
+    # nose_y = int(cy - nose_len * np.sin(nose_rad))
+    # cv2.arrowedLine(
+        # display, (cx, cy), (nose_x, nose_y), (0, 200, 200), 2, cv2.LINE_AA, tipLength=0.3
+    # )
  
     # Grid lines (subtle dark gray)
     grid_spacing = int(px_per_meter * 0.25)  # every 25cm
